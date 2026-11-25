@@ -1,0 +1,30 @@
+# ===== Datasets (too large for GitHub) =====
+PlantVillage_Cleaned/
+PlantDoc_Cleaned/
+PlantDoc_Final_Cleaned/
+
+# ===== Large zip files =====
+*.zip
+
+# ===== Large numpy feature caches =====
+CrossValidation_Outputs/all_features.npy
+CrossValidation_Outputs/all_labels.npy
+CrossValidation_PlantDoc_Outputs/plantdoc_resnet50_features.npy
+CrossValidation_PlantDoc_Outputs/plantdoc_labels.npy
+
+# ===== Model checkpoints =====
+vit_crop_disease_checkpoint/
+vision_onnx_models/
+
+# ===== Personal / Hinglish guide files (not for repo) =====
+Mam_Ko_Samjhane_Ki_Complete_Guide_Bhavya.md
+Mam_Latest_Meeting_Complete_Guide.md
+Code_References_For_Mam_Tasks.txt
+
+# ===== Other large/unneeded =====
+AgriBloom-Agentic-ET2026-main (1)/
+Fable 5 System Prompt.txt
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

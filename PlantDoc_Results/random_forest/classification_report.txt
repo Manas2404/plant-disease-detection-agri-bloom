@@ -1,0 +1,41 @@
+Model: Random Forest
+Dataset: PlantDoc
+Feature Extraction: Pretrained ResNet-50 embeddings (2048-dim)
+n_estimators=300, max_features=sqrt, min_samples_split=5
+Test Accuracy: 39.83%
+Weighted F1: 36.13%
+Macro F1: 35.52%
+
+                            precision    recall  f1-score   support
+
+           Apple Scab Leaf       0.50      0.30      0.38        10
+                Apple leaf       0.45      0.56      0.50         9
+           Apple rust leaf       0.40      0.20      0.27        10
+          Bell_pepper leaf       0.29      0.25      0.27         8
+     Bell_pepper leaf spot       0.00      0.00      0.00         9
+            Blueberry leaf       0.36      0.45      0.40        11
+               Cherry leaf       1.00      0.10      0.18        10
+       Corn Gray leaf spot       0.00      0.00      0.00         4
+          Corn leaf blight       0.56      0.83      0.67        12
+            Corn rust leaf       0.80      0.80      0.80        10
+                Peach leaf       0.47      0.78      0.58         9
+  Potato leaf early blight       0.23      0.38      0.29         8
+   Potato leaf late blight       0.20      0.25      0.22         8
+            Raspberry leaf       0.55      0.86      0.67         7
+             Soyabean leaf       0.60      0.38      0.46         8
+Squash Powdery mildew leaf       0.38      1.00      0.55         6
+           Strawberry leaf       0.67      1.00      0.80         8
+  Tomato Early blight leaf       0.00      0.00      0.00         9
+ Tomato Septoria leaf spot       0.20      0.64      0.30        11
+               Tomato leaf       1.00      0.12      0.22         8
+Tomato leaf bacterial spot       0.08      0.11      0.10         9
+   Tomato leaf late blight       0.30      0.30      0.30        10
+  Tomato leaf mosaic virus       0.00      0.00      0.00        10
+  Tomato leaf yellow virus       0.80      0.67      0.73         6
+          Tomato mold leaf       0.12      0.17      0.14         6
+                grape leaf       0.83      0.42      0.56        12
+      grape leaf black rot       1.00      0.12      0.22         8
+
+                  accuracy                           0.40       236
+                 macro avg       0.44      0.40      0.36       236
+              weighted avg       0.45      0.40      0.36       236

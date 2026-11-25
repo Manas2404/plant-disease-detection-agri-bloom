@@ -1,0 +1,222 @@
+{
+  "project": "Plant Disease Classification Using Deep Learning",
+  "student": "Bhavya Sodhi",
+  "method": "10-Fold Stratified Cross-Validation",
+  "dataset": "PlantVillage Cleaned",
+  "total_images": 54284,
+  "num_classes": 38,
+  "k_folds": 10,
+  "feature_extraction": "Pretrained ResNet-50 (2048-dim, frozen backbone)",
+  "scaling": "StandardScaler (fit on training fold only per fold)",
+  "random_seed": 42,
+  "random_forest": {
+    "config": "n_estimators=150, max_features=sqrt, max_depth=25",
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 89.86922085098546,
+        "weighted_f1": 89.07236054174419,
+        "macro_f1": 84.25009921934856,
+        "weighted_precision": 90.12648831895221,
+        "weighted_recall": 89.86922085098546,
+        "test_samples": 5429
+      },
+      {
+        "fold": 2,
+        "accuracy": 89.70344446491066,
+        "weighted_f1": 88.74872395650833,
+        "macro_f1": 82.95608544666754,
+        "weighted_precision": 89.85876677303555,
+        "weighted_recall": 89.70344446491066,
+        "test_samples": 5429
+      },
+      {
+        "fold": 3,
+        "accuracy": 89.35347209430834,
+        "weighted_f1": 88.39098168165047,
+        "macro_f1": 83.70061316356788,
+        "weighted_precision": 89.76642965707418,
+        "weighted_recall": 89.35347209430834,
+        "test_samples": 5429
+      },
+      {
+        "fold": 4,
+        "accuracy": 89.40873088966661,
+        "weighted_f1": 88.53679471388863,
+        "macro_f1": 83.14061249483787,
+        "weighted_precision": 89.51835965617614,
+        "weighted_recall": 89.40873088966661,
+        "test_samples": 5429
+      },
+      {
+        "fold": 5,
+        "accuracy": 89.14885777450257,
+        "weighted_f1": 88.22424768435818,
+        "macro_f1": 82.52471256104482,
+        "weighted_precision": 89.34969712608958,
+        "weighted_recall": 89.14885777450257,
+        "test_samples": 5428
+      },
+      {
+        "fold": 6,
+        "accuracy": 89.14885777450257,
+        "weighted_f1": 88.15122623537064,
+        "macro_f1": 83.29028376924596,
+        "weighted_precision": 89.46601554205962,
+        "weighted_recall": 89.14885777450257,
+        "test_samples": 5428
+      },
+      {
+        "fold": 7,
+        "accuracy": 89.9042004421518,
+        "weighted_f1": 89.09217958699314,
+        "macro_f1": 84.44705852342048,
+        "weighted_precision": 90.28707404136892,
+        "weighted_recall": 89.9042004421518,
+        "test_samples": 5428
+      },
+      {
+        "fold": 8,
+        "accuracy": 89.64627855563744,
+        "weighted_f1": 88.68937270577759,
+        "macro_f1": 83.94428234285257,
+        "weighted_precision": 90.12190933773311,
+        "weighted_recall": 89.64627855563744,
+        "test_samples": 5428
+      },
+      {
+        "fold": 9,
+        "accuracy": 90.12527634487842,
+        "weighted_f1": 89.21282478288296,
+        "macro_f1": 84.64918196111422,
+        "weighted_precision": 90.57256725143634,
+        "weighted_recall": 90.12527634487842,
+        "test_samples": 5428
+      },
+      {
+        "fold": 10,
+        "accuracy": 89.64627855563744,
+        "weighted_f1": 88.70745012785058,
+        "macro_f1": 83.2723706126143,
+        "weighted_precision": 89.72655741453748,
+        "weighted_recall": 89.64627855563744,
+        "test_samples": 5428
+      }
+    ],
+    "mean_accuracy": 89.5955,
+    "std_accuracy": 0.3099,
+    "mean_weighted_f1": 88.6826,
+    "std_weighted_f1": 0.3471,
+    "min_accuracy": 89.1489,
+    "max_accuracy": 90.1253
+  },
+  "linear_svm": {
+    "config": "SGDClassifier(loss=hinge, penalty=l2, alpha=1e-4)",
+    "fold_results": [
+      {
+        "fold": 1,
+        "accuracy": 95.56087677288635,
+        "weighted_f1": 95.52200448500412,
+        "macro_f1": 93.79945840120538,
+        "weighted_precision": 95.60094844486582,
+        "weighted_recall": 95.56087677288635,
+        "test_samples": 5429
+      },
+      {
+        "fold": 2,
+        "accuracy": 95.22932400073678,
+        "weighted_f1": 95.18848679763559,
+        "macro_f1": 93.57167759319628,
+        "weighted_precision": 95.24916262598188,
+        "weighted_recall": 95.22932400073678,
+        "test_samples": 5429
+      },
+      {
+        "fold": 3,
+        "accuracy": 95.33984159145331,
+        "weighted_f1": 95.29722405698415,
+        "macro_f1": 93.33245575495856,
+        "weighted_precision": 95.37909320153452,
+        "weighted_recall": 95.33984159145331,
+        "test_samples": 5429
+      },
+      {
+        "fold": 4,
+        "accuracy": 95.08196721311475,
+        "weighted_f1": 95.05509559082611,
+        "macro_f1": 93.09128548026602,
+        "weighted_precision": 95.20173261052707,
+        "weighted_recall": 95.08196721311475,
+        "test_samples": 5429
+      },
+      {
+        "fold": 5,
+        "accuracy": 95.32056005895357,
+        "weighted_f1": 95.30653836439275,
+        "macro_f1": 93.55234919043527,
+        "weighted_precision": 95.4693733493052,
+        "weighted_recall": 95.32056005895357,
+        "test_samples": 5428
+      },
+      {
+        "fold": 6,
+        "accuracy": 95.06263817243921,
+        "weighted_f1": 95.00043089036552,
+        "macro_f1": 93.17709715883359,
+        "weighted_precision": 95.03776853033435,
+        "weighted_recall": 95.06263817243921,
+        "test_samples": 5428
+      },
+      {
+        "fold": 7,
+        "accuracy": 95.21002210759028,
+        "weighted_f1": 95.17109493120434,
+        "macro_f1": 93.4296813820459,
+        "weighted_precision": 95.28954114617335,
+        "weighted_recall": 95.21002210759028,
+        "test_samples": 5428
+      },
+      {
+        "fold": 8,
+        "accuracy": 95.04421518054532,
+        "weighted_f1": 94.99220745159957,
+        "macro_f1": 92.79328806480184,
+        "weighted_precision": 95.13914825081281,
+        "weighted_recall": 95.04421518054532,
+        "test_samples": 5428
+      },
+      {
+        "fold": 9,
+        "accuracy": 95.70744288872513,
+        "weighted_f1": 95.67291215305485,
+        "macro_f1": 94.06606876566057,
+        "weighted_precision": 95.74869045919144,
+        "weighted_recall": 95.70744288872513,
+        "test_samples": 5428
+      },
+      {
+        "fold": 10,
+        "accuracy": 95.39425202652912,
+        "weighted_f1": 95.33074038217997,
+        "macro_f1": 93.08207561542876,
+        "weighted_precision": 95.42527751288624,
+        "weighted_recall": 95.39425202652912,
+        "test_samples": 5428
+      }
+    ],
+    "mean_accuracy": 95.2951,
+    "std_accuracy": 0.2067,
+    "mean_weighted_f1": 95.2537,
+    "std_weighted_f1": 0.2101,
+    "min_accuracy": 95.0442,
+    "max_accuracy": 95.7074
+  },
+  "comparison_with_original": {
+    "original_rf_accuracy": 83.82,
+    "original_svm_accuracy": 90.53,
+    "original_note": "Used 80 train + 20 test per class (3800 total), seed=42",
+    "cv_note": "Uses all 54284 images with 90/10 per fold",
+    "conclusion": "Difference expected due to different data volumes - seed is not biased"
+  },
+  "total_cv_time_minutes": 85.83
+}

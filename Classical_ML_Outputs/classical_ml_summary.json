@@ -1,0 +1,57 @@
+{
+  "project": "Plant Disease Classification Using Deep Learning",
+  "student": "Bhavya Sodhi",
+  "evaluation_timestamp": "2026-10-26 09:13:34",
+  "feature_extraction": "Pretrained ResNet-50 (2048-dimensional embeddings, PyTorch on RTX 3050 CUDA)",
+  "scaling": "StandardScaler fitted on training split only (no data leakage)",
+  "models": {
+    "PlantDoc_Random_Forest": {
+      "dataset": "PlantDoc (In-the-Wild)",
+      "num_classes": 27,
+      "train_samples": 2304,
+      "test_samples": 236,
+      "accuracy": 35.59322033898305,
+      "weighted_precision": 42.12992116788949,
+      "weighted_recall": 35.59322033898305,
+      "weighted_f1": 32.764550207413535,
+      "macro_f1": 32.48776879693403,
+      "training_time_seconds": 1.4085581302642822
+    },
+    "PlantDoc_Linear_SVM": {
+      "dataset": "PlantDoc (In-the-Wild)",
+      "num_classes": 27,
+      "train_samples": 2304,
+      "test_samples": 236,
+      "accuracy": 44.49152542372881,
+      "weighted_precision": 51.24756142826931,
+      "weighted_recall": 44.49152542372881,
+      "weighted_f1": 44.3321878018425,
+      "macro_f1": 44.05115140625643,
+      "training_time_seconds": 12.435367107391357
+    },
+    "PlantVillage_Random_Forest": {
+      "dataset": "PlantVillage (Laboratory)",
+      "num_classes": 38,
+      "train_samples": 3040,
+      "test_samples": 760,
+      "accuracy": 83.8157894736842,
+      "weighted_precision": 83.94078310596792,
+      "weighted_recall": 83.8157894736842,
+      "weighted_f1": 83.37466908689716,
+      "macro_f1": 83.37466908689719,
+      "training_time_seconds": 1.6649577617645264
+    },
+    "PlantVillage_Linear_SVM": {
+      "dataset": "PlantVillage (Laboratory)",
+      "num_classes": 38,
+      "train_samples": 3040,
+      "test_samples": 760,
+      "accuracy": 90.52631578947368,
+      "weighted_precision": 91.06481084320419,
+      "weighted_recall": 90.52631578947368,
+      "weighted_f1": 90.53857112432208,
+      "macro_f1": 90.53857112432203,
+      "training_time_seconds": 20.90989398956299
+    }
+  }
+}

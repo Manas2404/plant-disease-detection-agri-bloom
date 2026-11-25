@@ -1,0 +1,16 @@
+{
+  "model_name": "Random Forest",
+  "dataset": "PlantDoc",
+  "accuracy": 39.83050847457627,
+  "weighted_precision": 44.62691969047901,
+  "weighted_recall": 39.83050847457627,
+  "weighted_f1": 36.12768894087981,
+  "macro_precision": 43.626599737710855,
+  "macro_recall": 39.540110095665646,
+  "macro_f1": 35.52393884519488,
+  "feature_extraction": "Pretrained ResNet-50 embeddings (2048-dim)",
+  "training_time_minutes": 0.03559558391571045,
+  "train_samples": 2304,
+  "test_samples": 236,
+  "num_classes": 27
+}
